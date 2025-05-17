@@ -1,0 +1,24 @@
+Enter pin
+- 0000 default pin
+- If wrong 3x, Exit
+- If correct, proceed to selection of features
+Exit
+- 'exit' will close upon typing exit 
+
+Main Menu - if input is not 1-6, repeat ask input
+[1] Balance Inquiry - print balance
+[2] Withdraw Cash 
+	- ask for integer
+	- only accept valid quantity
+[3] Transfer Money
+	- enter account number
+	- account name
+	- ask amount
+[4] Deposit Money
+	- enter amount
+[5] Pay Bills
+	- add to balance
+[6] Change Pin
+	- enter old pin
+	- enter new pin
+	- confirm new pin
