@@ -1,7 +1,7 @@
+import '../helpers/account_state.dart';
 
-var InitialBalance = 0; // Default balance
-
-int BalanceInquiry() {
-    print('TODO: Balance Inquiry Page');
-    return 0;
+void BalanceInquiry() {
+  print(
+    '\nYour current balance is: \$${AccountState.currentBalance.toStringAsFixed(2)}\n',
+  );
 }
