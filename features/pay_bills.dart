@@ -10,19 +10,19 @@ class Bill {
 
   @override
   String toString() {
-    return '${isPaid ? "[PAID]" : "[DUE]"} \$${amount.toStringAsFixed(2)} - $name';
+    return '${isPaid ? "[PAID]" : "[DUE]"} \₱${amount.toStringAsFixed(2)} - $name';
   }
 }
 
 final List<Bill> Bills = [
-  Bill("Electricity", 40.15),
-  Bill("Water", 27.83),
-  Bill("Internet", 39.99),
+  Bill("Electricity", 2320.15),
+  Bill("Water", 374.83),
+  Bill("Internet", 1699.00),
 ];
 
 void PayBills() {
   print('==== Pay Bills ====');
-  print('Current Balance: \$${AccountState.currentBalance.toStringAsFixed(2)}\n');
+  print('Current Balance: \₱${AccountState.currentBalance.toStringAsFixed(2)}\n');
 
   void printBills() {
     for (int i = 0; i < Bills.length; i++) {
@@ -45,8 +45,8 @@ void PayBills() {
       } else if (AccountState.currentBalance >= bill.amount) {
         AccountState.currentBalance -= bill.amount;
         bill.isPaid = true;
-        print("Paid ${bill.name} for \$${bill.amount.toStringAsFixed(2)}.");
-        print("Remaining Balance: \$${AccountState.currentBalance.toStringAsFixed(2)}");
+        print("Paid ${bill.name} for \₱${bill.amount.toStringAsFixed(2)}.");
+        print("Remaining Balance: \₱${AccountState.currentBalance.toStringAsFixed(2)}");
       } else {
         print("Insufficient balance to pay for ${bill.name}.");
       }
