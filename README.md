@@ -1,7 +1,7 @@
 # ATM Simulation in Dart
-Made by:
-Besa, Kirk Patrick
-Cabanban, Ashley
-Fortuna, Ranjet
-Santiago, Pipo
-Xander
+Made by: <br>
+Besa, Kirk Patrick <br>
+Cabanban, Ashley <br>
+Fortuna, Ranjet <br>
+Santiago, Pipo <br>
+Xander <br>
